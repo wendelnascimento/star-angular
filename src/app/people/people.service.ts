@@ -17,7 +17,7 @@ export class PeopleService {
 
   getPersonImageUrl(query: string): Observable<any[]> {
     return this.http
-               .get(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=dc6zaTOxFJmzC`)
+               .get(`http://api.giphy.com/v1/gifs/search?q=${query}&api_key=dc6zaTOxFJmzC`)
                .map(this.toJSON)
                .catch(this.handleError);
   }
