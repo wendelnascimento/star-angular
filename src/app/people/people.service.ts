@@ -10,14 +10,14 @@ export class PeopleService {
 
   getPeople(): Observable<People[]> {
     return this.http
-               .get("http://swapi.co/api/people")
+               .get("https://swapi.co/api/people")
                .map(this.toJSON)
                .catch(this.handleError);
   }
 
   getPersonImageUrl(query: string): Observable<any[]> {
     return this.http
-               .get(`http://api.giphy.com/v1/gifs/search?q=${query}&api_key=dc6zaTOxFJmzC`)
+               .get(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=dc6zaTOxFJmzC`)
                .map(this.toJSON)
                .catch(this.handleError);
   }
