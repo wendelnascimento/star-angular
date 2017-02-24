@@ -1,8 +1,0 @@
-:host {
-    flex: 1 1 100%;
-    padding: 24px;
-}
-
-:host md-input-container {
-    width: 100%;
-}
